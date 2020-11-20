@@ -18,7 +18,7 @@ void setup() {
   Serial.begin(115200);
   
   while (!Serial) {
-    Serial.print("I will wait here forever...");
+    Serial.print("Waiting...");
       delay(1000);
   };
   
@@ -37,12 +37,12 @@ void setup() {
   } else {
     Serial.println("Can Init Failed");
     while (1) {
-      Serial.print("I will wait here forever...");
+      Serial.print("Waiting...");
       delay(1000);
     }
   }
 
-  Serial.println("Good to go!");
+  Serial.println("Ready!...");
 }
 
 void loop() {
